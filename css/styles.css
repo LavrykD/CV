@@ -21,8 +21,16 @@ body {
   font-family: 'Indie Flower', cursive;
   font-size: 4em;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding-top: 180px;
+}
+
+.python {
+  font-weight: bold;
+}
+
+.web {
+  font-weight: bold;
 }
 
 .container-header {
@@ -45,7 +53,7 @@ body {
   position: absolute;
   width: 150px;
   bottom: 200px;
-  right: 30px;
+  right: 45px;
 }
 
 .cloud-image-2 {
@@ -74,8 +82,7 @@ body {
   width: 150px;
   bottom: 255px;
   left: 220px;
-  filter: drop-shadow(2px 1px 0 #efefef)
-          drop-shadow(-1px -1px 0 #efefef);
+  filter: drop-shadow(2px 1px 0 #efefef) drop-shadow(-1px -1px 0 #efefef);
 }
 
 .cloud-image-6 {
