@@ -4,55 +4,67 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="./resources/css/styles.css" />
+        <link rel="stylesheet" href="./resources/css/reset.css" />
+        <link rel="stylesheet" href="./resources/css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/7152873479.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <header>
+            <div class="logo">
+                <h2>Dmytro Lavryk</h2>
+                <p>Newbie Software-Dev</p>
+            </div>
             <nav>
-                <a href="#home" class="nav-el">Home</a>
-                <a href="#about" class="nav-el">About</a>
-                <a href="#contact" class="nav-el">Contact</a>
+                <a href="" class="nav-el">Home</a>
+                <a href="" class="nav-el">About Me</a>
             </nav>
         </header>
         <main>
-            <section id="#home">
-                <div>
-                    <h1>Dmytro Lavryk</h1>
+            <section id="home">
+                <div class="wrapper">
+                    <h1>Welcome</h1>
                     <p>
-                        Introducing me, a talented 24-year-old QA/Support
-                        Engineer with a passion for development. Proficient in
-                        Python, HTML, CSS, and JavaScript, Dmytro is eager to
-                        embrace new challenges and transition into a role that
-                        allows him to leverage his diverse skillset and continue
-                        to grow as a developer.
+                        Introducing myself, a talented 24-year-old QA/Support
+                        Engineer with a passion for development. Been newbie
+                        software-dev in Python, HTML, CSS, and JavaScript, I am
+                        eager to embrace new challenges and transition into a
+                        role that allows me to leverage his diverse skillset and
+                        continue to grow as a developer. With a dedication to
+                        precision and an eye for detail, I'm seek to contribute
+                        my expertise to projects that push the boundaries of
+                        innovation and deliver exceptional user experiences.
                     </p>
-                    <p>
-                        With a dedication to precision and an eye for detail, he
-                        seeks to contribute his expertise to projects that push
-                        the boundaries of innovation and deliver exceptional
-                        user experiences.
-                    </p>
+                    <a
+                        href="./resources/documents/cv.docx"
+                        id="cv"
+                        download="Dmytro Lavryk - CV.docx"
+                        >Download</a
+                    >
                 </div>
             </section>
-            <section id="#about">
-                <div>
-                    <img src="" alt="" />
+            <section id="about">
+                <div class="items">
+                    <i class="fa-brands fa-python"></i>
                     <h3>Python</h3>
-                    <p>Knowledge:</p>
+                    <p>What I know:</p>
                     <ul>
                         <li>Basic Syntax and Data Types</li>
                         <li>Control Flow</li>
                         <li>Functions</li>
-                        <li>bject-Oriented Programming (OOP)</li>
+                        <li>Object-Oriented Programming (OOP)</li>
                         <li>File Handling</li>
+                        <li>Modules and Packages</li>
                         <li>Exception Handling</li>
                         <li>Working with APIs</li>
                     </ul>
                 </div>
-                <div>
-                    <img src="" alt="" />
+                <div class="items">
+                    <i class="fa-brands fa-html5"></i>
                     <h3>HTML</h3>
-                    <p>Knowledge:</p>
+                    <p>What I know:</p>
                     <ul>
                         <li>Structure and Semantic Elements</li>
                         <li>Tags and Attributes</li>
@@ -61,10 +73,10 @@
                         <li>Accessibility</li>
                     </ul>
                 </div>
-                <div>
-                    <img src="" alt="" />
+                <div class="items">
+                    <i class="fa-brands fa-css3-alt"></i>
                     <h3>CSS</h3>
-                    <p>Knowledge:</p>
+                    <p>What I know:</p>
                     <ul>
                         <li>Selectors and Box Model</li>
                         <li>Layouts</li>
@@ -73,10 +85,10 @@
                         <li>Transitions and Animations</li>
                     </ul>
                 </div>
-                <div>
-                    <img src="" alt="" />
-                    <h3>JavaScript</h3>
-                    <p>Knowledge:</p>
+                <div class="items">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JS</h3>
+                    <p>What I know:</p>
                     <ul>
                         <li>Variables and Data Types</li>
                         <li>Functions</li>
@@ -87,8 +99,14 @@
                     </ul>
                 </div>
             </section>
-            <section id="#contact"></section>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="container">
+                <a href="" class="footer-el">GitHub</a>
+                <a href="" class="footer-el">LinkedIn</a>
+                <a href="" class="footer-el">Telegram</a>
+            </div>
+            <p>Dmytro Lavryk &copy; 2023</p>
+        </footer>
     </body>
 </html>
