@@ -1,0 +1,32 @@
+:root {
+    --clr-primary-hsl: 231, 7%, 60%;
+    --clr-neutral-hsl-100: 257, 7%, 79%;
+    --clr-neutral-hsl-200: 340, 100%, 99%;
+
+    --clr-primary: hsl(var(--clr-primary-hsl));
+    --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
+    --clr-neutral-200: hsl(var(--clr-neutral-hsl-200));
+
+    --fs-100: 1rem;
+    --fs-200: 1.25rem;
+    --fs-300: 1.5rem;
+    --fs-400: 1.75rem;
+    --fs-500: 2rem;
+    --fs-700: 2.5rem;
+
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
