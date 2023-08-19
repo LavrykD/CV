@@ -49,21 +49,61 @@ li>span {
     display: grid;
 }
 
-/* .grid-flow[data-spacing="small"] {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+ul {
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+    list-style: url("https://api.iconify.design/solar:arrow-right-linear.svg") outside;
 }
 
-.grid-flow[data-spacing="small"] > div {
-    border: 1px solid black;
+ul > li {
+    padding: .5rem 0;
+}
+
+.grid-flow[data-spacing="small"] {
+    grid-template-areas: "details nationality"
+    "details languages"
+    "details links"
+    "skills skills";
+    background-color: grey;
+    color: white;
+}
+
+.details {
+    grid-area: details;
+}
+
+.national {
+    grid-area: nationality;
+}
+
+.links {
+    grid-area: links;
+}
+
+.languages {
+    grid-area: languages;
+}
+
+.skills {
+    grid-area: skills;
 }
 
 
 @media (min-width: 768px) {
     .grid-flow[data-spacing="small"] {
-        grid-template-columns: 1fr;
+        grid-template-areas: "details"
+        "nationality"
+        "links"
+        "skills"
+        "languages";
+        align-items: start;
+        height: fit-content;
     }
-} */
+
+    .wrapper {
+
+    }
+}
 
 h1,
 h2,
@@ -161,3 +201,30 @@ h1 {
     font-size: var(--fs-100);
     line-height: 1.5;
 }
+
+.container {
+    margin-top: 1.25rem;
+}
+
+.org-name {
+    font-style: italic;
+    font-weight: var(--fw-500);
+}
+
+.date-exp {
+    font-weight: var(--fw-600);
+    color: grey;
+}
+
+
+
+.wrapper {
+    padding: .5rem;
+    border: 1px solid black;
+}
+
+.list-details {
+    list-style: none;
+    margin: 0;
+}
+
