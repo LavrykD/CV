@@ -38,7 +38,7 @@ img {
 }
 
 span {
-    font-weight: var(--fw-500);
+    font-weight: var(--fw-600);
 }
 
 li > span {
@@ -72,6 +72,7 @@ h1, h2, h3 {
 .main-title {
     font-size: var(--fs-600);
     font-weight: var(--fw-600);
+    border-bottom: 3px solid black;
 }
 
 .sub-title {
@@ -83,12 +84,13 @@ body {
     font-family: var(--font-family-default);
     font-size: var(--fs-100);
     margin: 1rem;
+    line-height: 1.5;
 }
 
 main {
     max-width: 100rem;
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -113,6 +115,10 @@ main {
     .side-bar {
         grid-area: aside;
     }
+}
+
+.about-me {
+    text-align: center;
 }
 
 .about-me h1 {
