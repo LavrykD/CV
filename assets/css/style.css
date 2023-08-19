@@ -55,17 +55,18 @@ ul {
     list-style: url("https://api.iconify.design/solar:arrow-right-linear.svg") outside;
 }
 
-ul > li {
+ul>li {
     padding: .5rem 0;
 }
 
 .grid-flow[data-spacing="small"] {
-    grid-template-areas: "details nationality"
-    "details languages"
-    "details links"
-    "skills skills";
+    grid-template-areas: "skills details"
+        "skills nationality"
+        "skills languages"
+        "skills links";
     background-color: grey;
     color: white;
+    padding: 1rem;
 }
 
 .details {
@@ -92,10 +93,10 @@ ul > li {
 @media (min-width: 768px) {
     .grid-flow[data-spacing="small"] {
         grid-template-areas: "details"
-        "nationality"
-        "links"
-        "skills"
-        "languages";
+            "nationality"
+            "links"
+            "skills"
+            "languages";
         align-items: start;
         height: fit-content;
     }
@@ -175,10 +176,12 @@ main {
 
     h1 {
         grid-area: name;
+        margin-left: 2rem;
     }
 
     .about-me {
         grid-area: about-me;
+        margin-left: 2rem;
     }
 }
 
@@ -221,3 +224,79 @@ h1 {
     margin: 0;
 }
 
+.link {
+    text-decoration: none;
+    font-weight: var(--fw-500);
+    color: white;
+    padding: .5rem;
+    transition: all .25s ease-in-out;
+}
+
+.link:first-of-type {
+    margin-left: -.5rem;
+}
+
+.link:hover {
+    background-color: white;
+    color: grey;
+}
+
+.skill {
+    margin-top: .75rem;
+}
+
+.skill-bar {
+    max-width: 12.5rem;
+    height: .25rem;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background-color: black;
+
+    &:is([name="office"]) {
+        width: 70%;
+    }
+
+    &:is([name="api"]) {
+        width: 15%;
+    }
+
+    &:is([name="testing"]) {
+        width: 90%;
+    }
+
+    &:is([name="sql"]) {
+        width: 25%;
+    }
+
+    &:is([name="python"]) {
+        width: 45%;
+    }
+
+    &:is([name="html_css"]) {
+        width: 55%;
+    }
+
+    &:is([name="js"]) {
+        width: 25%;
+    }
+
+    &:is([name="player"]) {
+        width: 90%;
+    }
+
+    &:is([name="communication"]) {
+        width: 70%;
+    }
+
+    &:is([name="ua"]) {
+        width: 99%;
+    }
+
+    &:is([name="en"]) {
+        width: 60%;
+    }
+}
