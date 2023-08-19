@@ -7,12 +7,16 @@
     --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
     --clr-neutral-200: hsl(var(--clr-neutral-hsl-200));
 
+--font-family-default: "Montserrat", sans-serif;
+--font-family-neutral: "Barlow Condensed", sans-serif;
+
     --fs-100: 1rem;
-    --fs-200: 1.25rem;
-    --fs-300: 1.5rem;
-    --fs-400: 1.75rem;
-    --fs-500: 2rem;
-    --fs-700: 2.5rem;
+    --fs-200: 1.125rem;
+    --fs-300: 1.25rem;
+    --fs-400: 1.5rem;
+    --fs-500: 1.75rem;
+    --fs-600: 2rem;
+    --fs-700: 3rem;
 
     --fw-200: 200;
     --fw-300: 300;
@@ -22,7 +26,9 @@
     --fw-700: 700;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -30,3 +36,57 @@ img {
     display: block;
     max-width: 100%;
 }
+
+.grid-flow {
+    display: grid;
+}
+
+body {
+    font-family: var(--font-family-default);
+}
+
+main {
+    max-width: 100rem;
+    display: grid;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: minmax(auto, 85rem) minmax(auto, 15rem);
+        grid-template-areas: "head aside" "work aside" "education aside";
+    }
+
+    header {
+        grid-area: head;
+    }
+
+    .work {
+        grid-area: work;
+    }
+
+    .education {
+        grid-area: education;
+    }
+
+    .side-bar {
+        grid-area: aside;
+    }
+}
+
+.about-me h1 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-700);
+    font-family: var(--font-family-neutral);
+}
+
+.about-me p {
+    font-size: var(--fs-100);
+    line-height: 1.5;
+}
+
+.about-me p:first-of-type {
+    margin-top: 1rem;
+}
+
