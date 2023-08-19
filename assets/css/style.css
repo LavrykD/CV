@@ -99,10 +99,6 @@ ul > li {
         align-items: start;
         height: fit-content;
     }
-
-    .wrapper {
-
-    }
 }
 
 h1,
@@ -216,11 +212,8 @@ h1 {
     color: grey;
 }
 
-
-
 .wrapper {
     padding: .5rem;
-    border: 1px solid black;
 }
 
 .list-details {
