@@ -43,17 +43,21 @@ img {
 
 body {
     font-family: var(--font-family-default);
+    font-size: var(--fs-100);
+    line-height: 1.5;
+    margin: 1rem;
+
 }
 
 main {
     max-width: 100rem;
     display: grid;
     gap: 1rem;
-    margin: 1rem;
 }
 
 @media (min-width: 768px) {
     main {
+        margin-inline: auto;
         grid-template-columns: minmax(auto, 85rem) minmax(auto, 15rem);
         grid-template-areas: "head aside" "work aside" "education aside";
     }
