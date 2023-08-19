@@ -7,8 +7,8 @@
     --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
     --clr-neutral-200: hsl(var(--clr-neutral-hsl-200));
 
---font-family-default: "Montserrat", sans-serif;
---font-family-neutral: "Barlow Condensed", sans-serif;
+    --font-family-default: "Montserrat", sans-serif;
+    --font-family-neutral: "Barlow Condensed", sans-serif;
 
     --fs-100: 1rem;
     --fs-200: 1.125rem;
@@ -41,7 +41,7 @@ span {
     font-weight: var(--fw-600);
 }
 
-li > span {
+li>span {
     font-style: italic;
 }
 
@@ -65,7 +65,9 @@ li > span {
     }
 } */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-family-neutral);
 }
 
@@ -117,21 +119,45 @@ main {
     }
 }
 
-.about-me {
+.about {
     text-align: center;
+    gap: .5rem;
+    align-items: center;
 }
 
-.about-me h1 {
+@media (min-width: 992px) {
+    .about {
+        grid-template-areas: "photo name"
+            "photo about-me";
+        grid-template-columns: minmax(auto, 12rem) auto;
+        text-align: left;
+    }
+
+    .photo {
+        grid-area: photo;
+    }
+
+    h1 {
+        grid-area: name;
+    }
+
+    .about-me {
+        grid-area: about-me;
+    }
+}
+
+.photo {
+    max-width: 12rem;
+    max-height: 12rem;
+    justify-self: center;
+}
+
+h1 {
     font-size: var(--fs-700);
     font-weight: var(--fw-700);
 }
 
-.about-me p {
+.about-me {
     font-size: var(--fs-100);
     line-height: 1.5;
 }
-
-.about-me p:first-of-type {
-    margin-top: 1rem;
-}
-
