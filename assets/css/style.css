@@ -66,6 +66,7 @@ ul>li {
         "skills links";
     background-color: grey;
     color: white;
+    gap: .5rem;
 }
 
 .details {
