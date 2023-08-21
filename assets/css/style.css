@@ -1,26 +1,18 @@
 :root {
-    --clr-primary-hsl: 231, 7%, 60%;
-    --clr-neutral-hsl-100: 257, 7%, 79%;
-    --clr-neutral-hsl-200: 340, 100%, 99%;
+    --clr-primary-hsl: 0, 0%, 43%;
 
     --clr-primary: hsl(var(--clr-primary-hsl));
-    --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
-    --clr-neutral-200: hsl(var(--clr-neutral-hsl-200));
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(93, 55%, 55%);
 
     --font-family-default: "Montserrat", sans-serif;
     --font-family-neutral: "Barlow Condensed", sans-serif;
 
     --fs-100: 1rem;
-    --fs-200: 1.125rem;
-    --fs-300: 1.25rem;
     --fs-400: 1.5rem;
-    --fs-500: 1.75rem;
     --fs-600: 2rem;
     --fs-700: 3rem;
 
-    --fw-200: 200;
-    --fw-300: 300;
-    --fw-400: 400;
     --fw-500: 500;
     --fw-600: 600;
     --fw-700: 700;
@@ -64,8 +56,10 @@ ul>li {
         "skills nationality"
         "skills languages"
         "skills links";
-    background-color: grey;
-    color: white;
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-100);
+    margin: 0;
+    padding: 0;
 }
 
 .details {
@@ -89,7 +83,7 @@ ul>li {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) or (max-width: 400px) {
     .grid-flow[data-spacing="small"] {
         grid-template-areas: "details"
             "nationality"
@@ -211,7 +205,7 @@ h1 {
 
 .date-exp {
     font-weight: var(--fw-600);
-    color: grey;
+    color: hsl(var(--clr-primary-hsl), .6);
 }
 
 .wrapper {
@@ -226,7 +220,7 @@ h1 {
 .link {
     text-decoration: none;
     font-weight: var(--fw-500);
-    color: white;
+    color: var(--clr-neutral-100);
     padding: .5rem;
     transition: all .25s ease-in-out;
 }
@@ -236,8 +230,8 @@ h1 {
 }
 
 .link:hover {
-    background-color: white;
-    color: grey;
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-primary);
 }
 
 .skill {
@@ -245,15 +239,16 @@ h1 {
 }
 
 .skill-bar {
+    margin-top: .25rem;
     max-width: 12.5rem;
     height: .25rem;
-    background-color: #f0f0f0;
+    background-color: var(--clr-neutral-100);
     overflow: hidden;
 }
 
 .skill-fill {
     height: 100%;
-    background-color: black;
+    background-color: var(--clr-neutral-200);
 
     &:is([name="office"]) {
         width: 70%;
